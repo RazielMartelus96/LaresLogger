@@ -1,0 +1,6 @@
+name: LaresLogger
+version: '${project.version}'
+main: io.curiositycore.lareslogger.LaresLogger
+api-version: 1.19
+softdepend:
+  - Vulcan
