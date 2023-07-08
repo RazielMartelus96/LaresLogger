@@ -1,5 +1,6 @@
 package io.curiositycore.lareslogger.listener;
 
+
 import me.frep.vulcan.api.event.VulcanFlagEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
@@ -10,7 +11,6 @@ import java.util.UUID;
 public class VulcanFlagListener implements Listener {
     @EventHandler
     public void onFlaggedPlayer(VulcanFlagEvent vulcanFlagEvent){
-        vulcanFlagEvent.setCancelled(true);
         Bukkit.getLogger().info("TEST1");
         UUID uuid = vulcanFlagEvent.getPlayer().getUniqueId();
         String flagInfo = vulcanFlagEvent.getInfo();
